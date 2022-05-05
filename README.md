@@ -30,3 +30,16 @@ No segundo dia foi apresentado melhor o funcionamento do Figma, de forma a apren
 ✅ Criar layout de Introdução Pessoal
 
 ✅ Criar uma pull request com as novas Informações
+
+
+## 🟣 **Dia 3**
+
+**Tópicos Vistos:**
+
+No terceiro dia foi inserida mais uma seção do trabalho, onde foram acrescentadas as informações de experiência, de forma a realizar essa inserção pelo HTML e com algumas alterações no CSS.
+
+**Tarefas do Dia:**
+
+✅ Criar layout de Experiência
+
+✅ Criar uma pull request com as novas Informações
