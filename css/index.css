@@ -36,179 +36,141 @@ html {
 }
 
 
-/* Propriedades dos Tipos de Texto */
+/* Configurações Gerais da Página */
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: skrapbook;
+}
 
 h1 {
     font-family: skrapbook;
-    font-size: 3em;
+    font-size: 36px;
     color: #D55061;
+    margin-bottom: 0.2em;
 }
 
 h2 {
     font-family: skrapbook;
-    font-size: 2em;
+    font-size: 30px;
     color: #D55061;
 }
 
 h3 {
     font-family: skrapbook;
-    font-size: 1.5em;
+    font-size: 24px;
     color: #6868A8;
 }
 
 h4 {
     font-family: skrapbook;
-    font-size: 1em;
+    font-size: 18px;
     margin-bottom: 0px;
     margin-top: 2px;
 }
 
 p {
     font-family: 'Livvic', sans-serif;
+    text-align: justify;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
-    width: 100%;
-    align-content: start;
-}
-
-
-/* Configurações da Página */
 
 @media (min-width: 1200px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1200px;
+    .grid {
+        display: grid;
+        grid-template-columns: 30% 1fr 70% 1fr;
     }
-    .formacao,
-    .realizacoes,
-    .experiencia,
-    .projetos,
-    .contato {
+    .gridInformacoes {
+        display: grid;
+        grid-template-columns: 465px 2fr;
+    }
+    .coluna1,
+    .coluna2 {
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .formacao {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .realizacoes {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .experiencia {
-        grid-column: 2;
-        grid-row: 1/3;
-    }
-    .contato {
-        grid-column: 2;
-        grid-row: 3;
-    }
-}
-
-@media (min-width: 300px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90%;
     }
 }
 
 @media(max-width: 600px) {
-    .formacao,
-    .realizacoes,
-    .experiencia,
-    .projetos,
-    .contato {
-        width: 100%;
-        margin-bottom: 4em;
+    .grid {
+        display: grid;
+        grid-template-columns: 100% 1fr;
     }
-    .formacao {
-        grid-column: 1;
-        grid-row: 1;
+    .ladoEsquerdo {
+        margin-right: 0px;
     }
-    .experiencia {
-        grid-column: 1;
-        grid-row: 2;
+    .gridInformacoes {
+        display: grid;
+        grid-template-columns: 100% 1fr;
     }
-    .realizacoes {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    .projetos {
-        grid-column: 1;
-        grid-row: 4;
-    }
-    .contato {
-        grid-column: 1;
-        grid-row: 5;
-    }
-}
-
-
-/* Propriedades das Seções */
-
-.imagemPerfil img {
-    height: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.imagemFundo {
-    background-image: url("../images/fundo.png");
-    width: 100%;
-    height: 420px;
-    margin: auto 5px auto 0px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 600px 2fr;
-}
-
-.gridInformacoes {
-    display: grid;
-    grid-template-columns: 600px 2fr;
 }
 
 .imagemIcone {
     float: left;
     margin-right: 5px;
     height: 40px;
-    margin-top: 15px;
+    margin-left: 0.2em;
 }
 
-.formacao .ano {
-    color: #C65978;
+
+/* Configurações Lado Esquerdo */
+
+.ladoEsquerdo {
+    background-image: url("../images/fundo.png");
+    background-color: pink;
+    height: 100%;
+    border-radius: 20px 0px 0px 0px;
 }
 
-.formacao .local,
-.projetos .tecnologias,
-.experiencia .local {
-    color: #737373;
+.ladoEsquerdo h1,
+.ladoEsquerdo h3 {
+    text-align: center;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
 }
 
-.realizacoes .ano {
-    color: #D58DB5;
+.ladoEsquerdo p,
+.ladoEsquerdo a,
+.ladoEsquerdo h4 {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
 }
 
-.experiencia .ano {
-    color: #6868A8;
+.ladoEsquerdo h4 {
+    margin-bottom: 0px;
 }
 
-.experiencia p {
-    text-align: justify;
+.ladoEsquerdo p {
+    margin-top: 0px;
+    text-align: center;
 }
 
-.projetos .ano {
-    color: #87CEFA;
+.ladoEsquerdo .imagemPerfil {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Configurações Lado Direito */
+
+.ladoDireito {
+    width: 940px;
+    background-color: #fce4ec;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.ladoDireito h3,
+.ladoDireito h4,
+.ladoDireito .imagemIcone,
+.ladoDireito p {
+    margin-left: 1.5em;
 }
 
 
@@ -240,18 +202,15 @@ a:hover {
     text-shadow: 0px 0px 10px #D55061;
 }
 
-footer {
-    background-image: url("../images/fundo.png");
-    width: 100%;
-    height: 3em;
-    margin: auto 5px auto 0px;
-    border-radius: 15px 15px 15px 15px;
+.contato .icons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-footer p {
-    text-indent: 3em;
-    text-align: center;
-    padding: 0.4em;
-    color: black;
-    font-size: 1.3em;
+.contato a {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
