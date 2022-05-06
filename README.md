@@ -49,3 +49,16 @@ No terceiro dia foi inserida mais uma seção do trabalho, onde foram acrescenta
 ✅ Criar layout de Experiência
 
 ✅ Criar uma pull request com as novas Informações
+
+<br>
+
+## 🟣 **Dia 4**
+
+**Tópicos Vistos:**
+No quarto dia foi inserida mais uma seção de formação acadêmica, onde foram acrescentadas as informações de cursos, graduações e demais formações foram inseridas. Além disso, o layout do sistema começou a se encaixar melhor, com margens, e outras questões.
+
+**Tarefas do Dia:**
+
+✅ Criar layout de Formação Acadêmica
+
+✅ Criar uma pull request com as novas Informações
